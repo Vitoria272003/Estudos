@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Tulipas Encantadas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Tulipas Encantadas</h1>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#curiosidades">Curiosidades</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Beleza e elegância das tulipas</h2>
+      <p>Explore o fascinante mundo das tulipas, suas cores vibrantes e sua história encantadora.</p>
+    </div>
+  </section>
+  <main>
+    <section id="sobre">
+      <h2>Sobre as Tulipas</h2>
+      <p>
+        As tulipas são flores conhecidas por sua beleza e diversidade de cores. Originárias da Ásia Central, conquistaram o mundo e hoje embelezam jardins em todos os continentes.
+      </p>
+    </section>
+    <section id="galeria">
+      <h2>Galeria</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Tulipas rosas">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Tulipas vermelhas">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Tulipas amarelas">
+        <img src="https://images.unsplash.com/photo-1424746219973-8fe3bd07d8e3?auto=format&fit=crop&w=400&q=80" alt="Campo de tulipas">
+      </div>
+    </section>
+    <section id="curiosidades">
+      <h2>Curiosidades</h2>
+      <ul>
+        <li>A tulipa é o símbolo nacional da Holanda.</li>
+        <li>Existem mais de 3.000 variedades registradas de tulipas.</li>
+        <li>Elas florescem principalmente na primavera.</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Tulipas Encantadas. Feito com 💐</p>
+  </footer>
+</body>
+<style>
+:root {
+  --primary: #e95f76;
+  --secondary: #f7cac9;
+  --background: #f3f0ef;
+  --text: #2d2d2d;
+  --accent: #f3eec8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  background: var(--background);
+  color: var(--text);
+}
+
+header {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  color: white;
+  padding: 1.5rem 0 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(233, 95, 118, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(233,95,118,0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gallery img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 32px rgba(233,95,118,0.18);
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+footer {
+  background: var(--secondary);
+  text-align: center;
+  padding: 1rem 0;
+  color: var(--text);
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 1.7rem;
+  }
+  nav ul {
+    gap: 1rem;
+  }
+  .hero {
+    height: 180px;
+  }
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+  main {
+    padding: 0 0.4rem;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  section h2 {
+    font-size: 1.1rem;
+  }
+  .hero-content h2 {
+    font-size: 1rem;
+  }
+}
+</style>
+</html>
