@@ -1,215 +1,108 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Tulipas Encantadas</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+<html>
 </head>
+
 <body>
-  <header>
-    <h1>Tulipas Encantadas</h1>
-    <nav>
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#curiosidades">Curiosidades</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Beleza e elegância das tulipas</h2>
-      <p>Explore o fascinante mundo das tulipas, suas cores vibrantes e sua história encantadora.</p>
-    </div>
-  </section>
-  <main>
-    <section id="sobre">
-      <h2>Sobre as Tulipas</h2>
-      <p>
-        As tulipas são flores conhecidas por sua beleza e diversidade de cores. Originárias da Ásia Central, conquistaram o mundo e hoje embelezam jardins em todos os continentes.
-      </p>
-    </section>
-    <section id="galeria">
-      <h2>Galeria</h2>
-      <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Tulipas rosas">
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Tulipas vermelhas">
-        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Tulipas amarelas">
-        <img src="https://images.unsplash.com/photo-1424746219973-8fe3bd07d8e3?auto=format&fit=crop&w=400&q=80" alt="Campo de tulipas">
-      </div>
-    </section>
-    <section id="curiosidades">
-      <h2>Curiosidades</h2>
-      <ul>
-        <li>A tulipa é o símbolo nacional da Holanda.</li>
-        <li>Existem mais de 3.000 variedades registradas de tulipas.</li>
-        <li>Elas florescem principalmente na primavera.</li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 Tulipas Encantadas. Feito com 💐</p>
-  </footer>
-</body>
-<style>
-:root {
-  --primary: #e95f76;
-  --secondary: #f7cac9;
-  --background: #f3f0ef;
-  --text: #2d2d2d;
-  --accent: #f3eec8;
-}
+<b>Questionário</b> <br / >
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<b>Questão 1:</b> Explique qual é a função de um servidor web em um ambiente de hospedagem e cite pelo menos um exemplo. <br /><br />
 
-body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  line-height: 1.6;
-  background: var(--background);
-  color: var(--text);
-}
+<b>Resposta:</b> <font color="pink"> O servidor web entrega arquivos estáticos de um site para o usuário. Ex: Apache. </font><hr /> 
+ 
+<b>Questão 2:</b> Qual a principal característica do NGINX e por que ele é muito utilizado em projetos de alto desempenho? <br /><br />
 
-header {
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
-  color: white;
-  padding: 1.5rem 0 1rem 0;
-  text-align: center;
-}
+<b>Resposta:</b> <font color="pink"> A principal característica é trabalhar de forma eficiente com conexões simultâneas, utilizando uma quantidade mínima de recursos do servidor. Por esse motivo é utilizado em projetos de alto desempenho. </font><hr /> 
+ 
+<b>Questão 3:</b> Diferencie os protocolos HTTP e HTTPS. Por que o HTTPS é recomendado para aplicações modernas? <br /><br />
 
-header h1 {
-  margin-bottom: 0.5rem;
-  font-size: 2.5rem;
-  letter-spacing: 2px;
-}
+<b>Resposta:</b> <font color="pink"> HTTP permite a troca de informações entre cliente e servidor, mas não criptografa os dados, diferente do HTTPS que utiliza criptografia SSL/TLS para proteger os dados transmitidos, garantindo confidencialidade e integridade da informação.</font> <hr />
+ 
+<b>Questão 4:</b> Qual é a função das portas em uma rede de computadores e qual a importância da porta 443? <br /><br />
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
+<b>Resposta:</b> <font color="pink"> As portas funcionam como pontos de acesso lógicos que permitem que diferentes serviços e aplicações se comuniquem entre si. A porta 443 é usada para o HTTPS. Ela é fundamental para a segurança na web.</font> <hr />
+ 
+<b>Questão 5:</b> Defina o conceito de endereço IP e explique sua importância em redes de computadores. <br /><br />
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s;
-}
+<b>Resposta:</b> <font color="pink"> Um endereço IP funciona como o "endereço residencial" de um dispositivo na rede. Ele permite que os dados enviados pela rede cheguem ao destino correto. É importante para identificação de dispositivos, roteamento de dados, comunicação entre dispositivos, geolocalização, segurança e controle. </font><hr />
+ 
+<b>Questão 6:</b> Explique o que é hospedagem VPS e em quais situações ela é mais indicada. <br /><br />
 
-nav a:hover {
-  color: var(--accent);
-}
+<b>Resposta:</b> <font color="pink"> É um servidor virtual com mais controle e desempenho. Indicado quando precisa de hospedagem de vários sites com tráfego alto.</font><hr />
 
-.hero {
-  background: url('https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
-  height: 320px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
+ 
+<b>Questão 7:</b> Descreva as vantagens do servidor web Caddy em relação a outros servidores tradicionais. <br /><br />
 
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(233, 95, 118, 0.4);
-}
+<b>Resposta:</b> <font color="pink"> Facilidade de uso, segurança embutida e configuração automática de HTTPS. </font><hr />
+ 
+<b>Questão 8:</b> Qual servidor de aplicação é mais indicado para aplicações desenvolvidas na plataforma .NET (C#)? Explique o motivo. <br /><br />
 
-.hero-content {
-  position: relative;
-  color: white;
-  text-align: center;
-  z-index: 1;
-}
+<b>Resposta:</b> <font color="pink"> O Kestrel é o mais indicado por conta do seu alto desempenho, integração nativa com o .NET e otimizado para C#. </font><hr />
+ 
+<b>Questão 9:</b> Descreva o funcionamento do modelo Cliente-Servidor no contexto de sistemas web. <br /><br />
 
-.hero-content h2 {
-  font-size: 2rem;
-  margin-bottom: 0.6rem;
-}
+<b>Resposta:</b> <font color="pink"> O cliente (como um navegador) faz um pedido a um servidor, que processa esse pedido e envia uma resposta com os dados requisitados (como uma página web). Essa troca acontece por meio do protocolo HTTP, e a conexão termina após cada interação.</font> <hr />
 
-main {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
+<b>Questão 10:</b> Explique o que é o Apache Tomcat e para qual tipo de aplicação ele é mais indicado. <br /><br />
 
-section {
-  margin-bottom: 2.5rem;
-}
+<b>Resposta:</b> <font color="pink"> O Apache Tomcat é um servidor de aplicações open-source projetado especificamente para executar aplicações web baseadas em Java.</font> <hr />
+ 
+<b>Questão 11:</b>  Diferencie, com suas palavras, um servidor web de um servidor de aplicação, destacando suas funções principais. <br /><br />
 
-section h2 {
-  margin-bottom: 1rem;
-  color: var(--primary);
-}
+<b>Resposta:</b> <font color="pink"> O servidor web mostra o que já está pronto, o servidor de aplicação cria o que for necessário. O servidor web lida com requisições HTTP e entrega conteúdo estático. O servidor de aplicação executa lógica de negócio e gera conteúdo dinâmico.</font> <hr />
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
-}
+<b>Questão 12:</b> Defina o conceito de domínio na internet e sua relação com os endereços IP. <hr />
 
-.gallery img {
-  width: 100%;
-  border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(233,95,118,0.07);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
 
-.gallery img:hover {
-  transform: scale(1.04);
-  box-shadow: 0 8px 32px rgba(233,95,118,0.18);
-}
+<b>Questão 13:</b>Quais as principais vantagens da hospedagem em nuvem em comparação com a hospedagem local?<hr />
 
-ul {
-  padding-left: 1.2rem;
-}
 
-footer {
-  background: var(--secondary);
-  text-align: center;
-  padding: 1rem 0;
-  color: var(--text);
-  font-size: 1rem;
-  margin-top: 3rem;
-}
+<b>Questão 14:</b>Cite dois exemplos de servidores de aplicação e as linguagens/plataformas que eles suportam.<hr />
 
-@media (max-width: 700px) {
-  header h1 {
-    font-size: 1.7rem;
-  }
-  nav ul {
-    gap: 1rem;
-  }
-  .hero {
-    height: 180px;
-  }
-  .hero-content h2 {
-    font-size: 1.2rem;
-  }
-  main {
-    padding: 0 0.4rem;
-  }
-  .gallery {
-    grid-template-columns: 1fr 1fr;
-  }
-}
 
-@media (max-width: 420px) {
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-  section h2 {
-    font-size: 1.1rem;
-  }
-  .hero-content h2 {
-    font-size: 1rem;
-  }
-}
-</style>
-</html>
+<b>Questão 15:</b>Por que é essencial a utilização de HTTPS em sites e sistemas atualmente? Quais riscos o HTTP apresenta?<hr />
+
+
+<b>Questão 16:</b>Dê um exemplo de situação onde o uso de hospedagem VPS seria mais vantajoso do que uma hospedagem compartilhada.<hr />
+
+
+<b>Questão 17:</b>Diferencie os conceitos de IP e porta em uma rede, explicando suas funções.<hr />
+
+
+<b>Questão 18:</b>Qual a importância de um servidor web conseguir lidar com conexões via HTTPS?<hr />
+
+
+<b>Questão 19:</b>Cite dois exemplos de servidores web e explique suas principais características.<hr />
+
+
+<b>Questão 20:</b>Defina o que é uma hospedagem compartilhada e em quais casos ela costuma ser utilizada.<hr />
+
+
+<b>Questão 21:</b>Explique a função de um servidor de aplicação e a diferença em relação a servidores que apenas servem arquivos estáticos.<hr />
+
+
+<b>Questão 22:</b>Cite um servidor de aplicação usado para projetos em Python e descreva como ele funciona.<hr />
+
+
+<b>Questão 23:</b>O que é o WildFly (ex-JBoss) e para qual tecnologia ele é indicado?<hr />
+
+
+<b>Questão 24:</b>Qual a função da porta 21 em redes de computadores e para qual serviço ela é utilizada?<hr />
+
+
+<b>Questão 25:</b>Explique por que o servidor LiteSpeed é compatível com o Apache e quais as vantagens dessa compatibilidade.<hr />
+
+
+<b>Questão 26:</b>O que é o Microsoft IIS e em quais situações ele costuma ser adotado?<hr />
+
+
+<b>Questão 27:</b>Explique para que serve o Node.js e em quais tipos de aplicações ele é mais utilizado.<hr />
+
+
+<b>Questão 28:</b>Descreva a função do servidor GlassFish e para qual linguagem ele é destinado.<hr />
+
+
+<b>Questão 29:</b>O que são Puma e Unicorn e em quais projetos eles são normalmente utilizados?<hr />
+
+
+<b>Questão 30:</b>Qual a importância da escolha adequada entre hospedagem local, compartilhada, VPS e nuvem no planejamento de um projeto web?<hr />
+
+ 
